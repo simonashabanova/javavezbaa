@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+</head>
+<body>
+    <button>klikni me!</button>
+    <input type="text" class="ime"/>
+    <script>
+     var btn = document.querySelector('button');
+     console.log(btn);
+     var ime = document.querySelector('.ime');
+     console.log(ime);
+     btn.addEventListener('click', function(){
+        // console.log('te kliknav...');
+        // alert('TE KLIKNAV!');
+        alert('Zdravo ' +  ime.value);
+        ime.value = '';
+     });
+    </script>
+</body>
+</html>
